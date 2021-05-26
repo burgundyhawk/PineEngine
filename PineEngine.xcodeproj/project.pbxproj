@@ -14,6 +14,8 @@
 		8F1CE4E7265DA057006B36BD /* libGLEW.2.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F1CE4A3265DA02F006B36BD /* libGLEW.2.2.0.dylib */; };
 		8F1CE4E8265DA057006B36BD /* libGLEW.2.2.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 8F1CE4A3265DA02F006B36BD /* libGLEW.2.2.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		8F6084B7265DC2F8007561DC /* libSOIL2BUILD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F6084B5265DC2E0007561DC /* libSOIL2BUILD.a */; };
+		8F6084DD265DCC7D007561DC /* VersionControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F6084DC265DCC7D007561DC /* VersionControl.cpp */; };
+		8FB5B5C3265DEB9200B95E48 /* window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8FB5B5C2265DEB9200B95E48 /* window.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -547,6 +549,9 @@
 		8F6084CF265DC367007561DC /* stbi_DDS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stbi_DDS.h; sourceTree = "<group>"; };
 		8F6084D0265DC367007561DC /* pvr_helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pvr_helper.h; sourceTree = "<group>"; };
 		8F6084D5265DC367007561DC /* common.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = common.hpp; sourceTree = "<group>"; };
+		8F6084DB265DC6B6007561DC /* libs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libs.h; sourceTree = "<group>"; };
+		8F6084DC265DCC7D007561DC /* VersionControl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = VersionControl.cpp; sourceTree = "<group>"; };
+		8FB5B5C2265DEB9200B95E48 /* window.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = window.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1342,33 +1347,12 @@
 		8F1CE4D4265DA02F006B36BD /* src */ = {
 			isa = PBXGroup;
 			children = (
-				8F1CE4D5265DA02F006B36BD /* headers */,
-				8F1CE4D6265DA02F006B36BD /* cpp */,
-				8F1CE4D8265DA02F006B36BD /* shaders */,
+				8F6084DB265DC6B6007561DC /* libs.h */,
+				8F1CE4D7265DA02F006B36BD /* main.cpp */,
+				8F6084DC265DCC7D007561DC /* VersionControl.cpp */,
+				8FB5B5C2265DEB9200B95E48 /* window.cpp */,
 			);
 			path = src;
-			sourceTree = "<group>";
-		};
-		8F1CE4D5265DA02F006B36BD /* headers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = headers;
-			sourceTree = "<group>";
-		};
-		8F1CE4D6265DA02F006B36BD /* cpp */ = {
-			isa = PBXGroup;
-			children = (
-				8F1CE4D7265DA02F006B36BD /* main.cpp */,
-			);
-			path = cpp;
-			sourceTree = "<group>";
-		};
-		8F1CE4D8265DA02F006B36BD /* shaders */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = shaders;
 			sourceTree = "<group>";
 		};
 		8F1CE4E1265DA03E006B36BD /* Frameworks */ = {
@@ -1485,6 +1469,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FB5B5C3265DEB9200B95E48 /* window.cpp in Sources */,
+				8F6084DD265DCC7D007561DC /* VersionControl.cpp in Sources */,
 				8F1CE4E0265DA02F006B36BD /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
