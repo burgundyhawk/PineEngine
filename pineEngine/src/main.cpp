@@ -1,6 +1,5 @@
 #include "libs.h"
-int getVersion();
-GLFWwindow* makeMainWin();
+
 
 int main(void)
 {
